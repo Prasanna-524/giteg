@@ -1,12 +1,12 @@
 package generics;
-import equalhashh.Item;
+import equalhashh.Student;
 
 public class StorageMain {
 	public static void main(String[]args) {
-		Item element=new Item(12,"chinni");
-		Storage<Item> storage=new Storage<>();
+		Student element=new Student(12,"chinni");
+		Storage<Student> storage=new Storage<>();
 		storage.add(element);
-		Item obj=storage.getElement();
+		Student obj=storage.getElement();
 		System.out.println("" +obj.getId()+ " "+obj.getName());
 	
 	}

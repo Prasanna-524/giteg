@@ -1,9 +1,9 @@
 package collectiondemos;
 import java.util.Comparator;
-import equalhashh.Item;
+import equalhashh.Student;
 
-public class TraineeComparator implements Comparator<Item>{
-	public int compare(Item o1,Item o2)
+public class TraineeComparator implements Comparator<Student>{
+	public int compare(Student o1,Student o2)
 	{
 		int id1=o1.getId();
 		int id2=o2.getId();

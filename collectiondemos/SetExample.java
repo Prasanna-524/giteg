@@ -2,23 +2,23 @@
 package collectiondemos;
 
 import java.util.*;
-import equalhashh.Item;
+import equalhashh.Student;
 
 public class SetExample {
 
 	public static void main(String[]args) {
-		Comparator<Item> comparator=new TraineeComparator();
+		Comparator<Student> comparator=new TraineeComparator();
 		//Set <Trainee>set=new HashSet();
-		Set <Item>set=new TreeSet<>(comparator);
-		Item trainee1=new Item(19, "chinna");
+		Set <Student>set=new TreeSet<>(comparator);
+		Student trainee1=new Student(19, "chinna");
 		set.add(trainee1);// adding element at the end
-		Item trainee2=new Item(21, "chinna");
+		Student trainee2=new Student(21, "chinna");
 		set.add(trainee2);
-		Item trainee3=new Item(20, "sri");
+		Student trainee3=new Student(20, "sri");
 		set.add(trainee3);
-		Item trainee4=new Item(20, "sonu");
+		Student trainee4=new Student(20, "sonu");
 		set.add(trainee4);
-		Item trainee5=new Item(21, "ammu");
+		Student trainee5=new Student(21, "ammu");
 		set.add(trainee5);
 
 		int size= set.size();
@@ -26,7 +26,7 @@ public class SetExample {
 		set.remove(trainee4);
 		size= set.size();
 		System.out.println("after removing"+size);
-		for(Item trainee:set) {
+		for(Student trainee:set) {
 		System.out.println(trainee.getId()+" "+trainee.getName());
 			
 		}	

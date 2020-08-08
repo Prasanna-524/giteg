@@ -2,25 +2,25 @@ package collectiondemos;
 
 import java.util.*;
 
-import equalhashh.Item;
+import equalhashh.Student;
 public class LinkedExample {
 
 	public static void main(String[] args) {
 
 		List list = new LinkedList();
-		Item trainee1=new Item(18, "chinni");
+		Student trainee1=new Student(18, "chinni");
 		list.add(trainee1);// adding element at the end
-		Item trainee2=new Item(19, "chinna");
+		Student trainee2=new Student(19, "chinna");
 		list.add(trainee2);
-		Item trainee3=new Item(14, "sonu");
+		Student trainee3=new Student(14, "sonu");
 		list.add(trainee3);
-		Item trainee4=new Item(19, "ammu");
+		Student trainee4=new Student(19, "ammu");
 		list.add(trainee4);
-		Item trainee5=new Item(20, "deepu");
+		Student trainee5=new Student(20, "deepu");
 		list.add(trainee5);
 
 		Object ele = list.get(2);// fetching element at index 2
-		Item etrainee = (Item) ele;
+		Student etrainee = (Student) ele;
 		int size = list.size();
 
 		System.out.println(" before removing " + size);
@@ -38,14 +38,14 @@ public class LinkedExample {
 
 		for (int i = 0; i < list.size(); i++) {
 			Object obj = list.get(i);
-			Item trainee = (Item) obj;
+			Student trainee = (Student) obj;
 			System.out.println("element" + trainee.getId() + " " + trainee.getName());
 
 		}
 
 		System.out.println("for each");
 		for (Object obj : list) {
-			Item trainee = (Item) obj;
+			Student trainee = (Student) obj;
 			System.out.println("element" + trainee.getId() + " " + trainee.getName());
 		}
 

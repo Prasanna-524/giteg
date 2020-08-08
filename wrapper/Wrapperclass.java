@@ -2,7 +2,7 @@ package wrapper;
 
 public class Wrapperclass {
 	public static void main(String args[]) {				
-		int i1=10;		
+		//int i1=10;		
 		Integer i2=new Integer(10); 
 		int primitive=i2.intValue();
 		byte b=i2.byteValue();

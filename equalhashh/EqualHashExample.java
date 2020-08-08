@@ -3,9 +3,9 @@ package equalhashh;
 public class EqualHashExample {
 	public static void main(String args[])
 	{
-		Item t1=new Item(10,"chinni");
+		Student t1=new Student(10,"chinni");
 	//	Trainee t2=t1;
-		Item t2=new Item(10,"chinna");
+		Student t2=new Student(10,"chinna");
 		boolean issame=t1==t2;
 		boolean isEquals=t1.equals(t2);
 		System.out.println(""+issame);

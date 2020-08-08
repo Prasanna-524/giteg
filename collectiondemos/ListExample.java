@@ -1,26 +1,26 @@
 package collectiondemos;
 
 import java.util.*;
-import equalhashh.Item;
+import equalhashh.Student;
 
 public class ListExample {
 		public static void main(String args[])
 		{
-			List<Item> list=new ArrayList();
+			List<Student> list=new ArrayList();
 			//adding elements in to the list using add function.
-			Item trainee1=new Item(10, "sri");
+			Student trainee1=new Student(10, "sri");
 			list.add(trainee1);// adding element at the end
-			Item trainee2=new Item(11, "siri");
+			Student trainee2=new Student(11, "siri");
 			list.add(trainee2);
-			Item trainee3=new Item(4, "anu");
+			Student trainee3=new Student(4, "anu");
 			list.add(trainee3);
-			Item trainee4=new Item(13, "devika");
+			Student trainee4=new Student(13, "devika");
 			list.add(trainee4);
-			Item trainee5=new Item(15, "lucky");
+			Student trainee5=new Student(15, "lucky");
 			list.add(trainee5);
-			Comparator<Item> comparator=new TraineeComparator();
+			Comparator<Student> comparator=new TraineeComparator();
 			list.sort(comparator);
-			 Item ele=list.get(2);
+			 Student ele=list.get(2);
 			 //get(2) to get element at particular location
 			 int size=list.size();
 				 
@@ -40,21 +40,21 @@ public class ListExample {
 			 
 			 
 			 for(int i=0;i<list.size();i++) {
-				Item trainee =list.get(i); 
+				Student trainee =list.get(i); 
 				System.out.println("element is"+trainee.getId() + "name is " + trainee.getName()); 
 			 
 			 }
 		
 			 System.out.println("for each");
-			 for(Item trainee:list) { 
+			 for(Student trainee:list) { 
 				System.out.println("element is"+trainee.getId() + "name is " + trainee.getName()); 
 				
 			 }	
 			 System.out.println("iterator");
-			 Iterator<Item> iterator=list.iterator();
+			 Iterator<Student> iterator=list.iterator();
 			   //hasNext() will return true if next element is available
 			   while(iterator.hasNext()) {		 
-					Item trainee = iterator.next();// fetch next element
+					Student trainee = iterator.next();// fetch next element
 					System.out.println("element=" + trainee.getId() + " " + trainee.getName());
 			   }
 			 

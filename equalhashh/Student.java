@@ -1,12 +1,12 @@
 package equalhashh;
 
-public class Item {
+public class Student {
 
 	private int id; 
 	
 	private String name;
 	
-	public Item(int id, String name) {
+	public Student(String name, int id) {
 		this.id=id;
 		this.name=name;
 	}
@@ -46,13 +46,18 @@ public class Item {
 			return true;
 		}
 		
-	   if(arg==null || !(arg instanceof Item) ) {
+	   if(arg==null || !(arg instanceof Student) ) {
 			return false;
 	   }
 		
-	    Item that=(Item)arg;	
+	    Student that=(Student)arg;	
 		boolean isequal=this.id==that.id;
 		return isequal;
+	}
+
+	public int getAge() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	
