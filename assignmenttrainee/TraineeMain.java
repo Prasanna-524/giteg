@@ -39,13 +39,13 @@ public class TraineeMain {
             int id=cseset.getId();
             String name=cseset.getName();
             int language=cseset.getLanguage();
-            System.out.println(" id"+id+ "The name="+name+" Languages="+language);
+            System.out.println(" id"+id+ "name"+name+" languages"+language);
         }
 		for(Trainee eceset:set2)
         {
             int id=eceset.getId();
             String name=eceset.getName();
-            int deviceused=eceset.getdeviceUsed();
+            String deviceused=eceset.getDeviceUsed();
             System.out.println(" id"+id+ "The name="+name+"device" +deviceused);
         }	
 				

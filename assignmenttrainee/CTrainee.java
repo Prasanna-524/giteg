@@ -1,17 +1,17 @@
 package assignmenttrainee;
 
 public class CTrainee extends Trainee {
-	int languages;
-	public CTrainee(int id, String name,int languages) {
+	int language;
+	public CTrainee(int id, String name,int language) {
 		super(id, name);
-		this.languages=languages;
+		this.language=language;
 	}
 
-	public int getLanguages(){
-		return languages;
+	public int getLanguage(){
+		return language;
 		}
-		public void setLanguages(int languages){
-			languages=languages;
+		public void setLanguage(int language){
+			language=language;
 		}	
 
 }

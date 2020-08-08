@@ -7,10 +7,10 @@ public class ETrainee extends Trainee {
 		this.deviceused=deviceused;
 	}
 
-	public String getdeviceUsed(){
+	public String getDeviceUsed(){
 		return deviceused;
 		}
-		public void setdeviceUsed(String devicesused){
+		public void setDeviceUsed(String deviceused){
 		deviceused=deviceused;
 		}	
 

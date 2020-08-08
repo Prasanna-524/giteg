@@ -37,7 +37,17 @@ public class Trainee {
 			return isequal;
 		
 		}
-}
+		public int getLanguage() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		public String getDeviceUsed() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		}
+
 	
 	
 
