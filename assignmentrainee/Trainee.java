@@ -37,6 +37,10 @@ public class Trainee {
 			return isequal;
 		
 		}
+		public int getLanguage() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 		
 		
 		}
